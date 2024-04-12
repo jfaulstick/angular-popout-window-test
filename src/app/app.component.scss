@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0;
+}
+
+.mat-mdc-card {
+  width: fit-content;
+  margin: 0.5em;
+}

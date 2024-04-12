@@ -1,0 +1,37 @@
+<popout-window
+  #counterControlsWindow1
+  [wrapperRetainSizeOnPopout]="true"
+  [windowTitle]="'Counter Controls'"
+>
+  <div class="counter-controls">
+    <div>
+      <button mat-flat-button color="primary" (click)="fakeData.incrementColor('red', 1)" style="background-color: red;">
+        +1
+      </button>
+      <button mat-flat-button color="accent" (click)="fakeData.incrementColor('blue', 1)" style="background-color: mediumblue;">
+        +1
+      </button>
+      <button mat-flat-button color="warn" (click)="fakeData.incrementColor('yellow', 1)" style="background-color: yellow;color: black;">
+        +1
+      </button>
+
+      <button
+        mat-flat-button
+        color=""
+        (click)="this.fakeData.resetColors()"
+      >
+        Reset
+      </button>
+
+      <button mat-flat-button color="primary" (click)="fakeData.incrementColor('green', 1)" style="background-color: green;">
+        +1
+      </button>
+      <button mat-flat-button color="accent" (click)="fakeData.incrementColor('purple', 1)" style="background-color: purple;">
+        +1
+      </button>
+      <button mat-flat-button color="warn" (click)="fakeData.incrementColor('orange', 1)" style="background-color: orange;">
+        +1
+      </button>
+    </div>
+  </div>
+</popout-window>

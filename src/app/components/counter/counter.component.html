@@ -1,0 +1,13 @@
+<popout-window
+  #popoutWindow
+  [wrapperRetainSizeOnPopout]="true"
+  [windowTitle]="'Counter'"
+>
+  <div class="counter-container">
+    <mat-chip-set>
+      <mat-chip color="secondary" style="background-color: #00bb00"
+        ><span style="font-weight: 500">Count: {{ fakeData.getCount() }}</span>
+      </mat-chip>
+    </mat-chip-set>
+  </div>
+</popout-window>
